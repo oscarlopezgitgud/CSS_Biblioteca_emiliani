@@ -1,0 +1,62 @@
+body{
+    /*Colocar un fondo*/
+    background-color: brown;
+    /*Define el tipo de letras*/
+    font-family: Arial;
+    /*Elimina el margen predeterminado del navegador*/
+    margin: 0;
+    /*Agrega espacio interno alrededor del contenido*/
+    padding: 30px;
+}
+
+h1{
+    /*color del titulo*/
+    color: white;
+    /*alineacion del titulo*/
+    text-align: center;
+    /*Tamaño del titulo*/
+    font-size: 24px;
+    /*Deja espacio debajo del titulo*/
+    margin-bottom: 30px;
+}
+
+.contenedor-libros{
+    /*Activa css grid*/
+    display: grid;
+    /*Crea 5 columas iguales*/
+    grid-template-columns: repeat(5, 1fr);
+    /*Espacop entre los libros*/
+    gap: 30px;
+}
+
+.libro{
+    /*Fondo color chocolate para los libros*/
+    background-color: chocolate;
+    border: 2px solid blue;
+    padding: 20px;
+    min-height: 190px;
+    box-sizing: border-box;
+}
+.libro h2{
+    color: white;
+    font-size:18;
+    margin-top: 0;
+}
+.libro p{
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.disponible{
+    color: green;
+    font-weight: bold;
+}
+
+.no-disponible{
+    color:red;
+    font-weight:bold;
+}
+.libro:hover{
+    /*efecto de escala al pasar el mouse*/
+    transform: scale(1.05);
+}
